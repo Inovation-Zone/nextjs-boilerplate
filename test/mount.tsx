@@ -12,7 +12,7 @@ import store from "@redux/store";
  * please visit https://enzymejs.github.io/enzyme/
  */
 
-const AllTheProviders = ({ children }) => {
+const AllTheProviders = ({ children }: any) => {
   return (
     <>
       <Provider store={store}>{children}</Provider>
