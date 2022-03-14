@@ -4,9 +4,8 @@ import "tailwindcss/tailwind.css";
 import "@styles/global.scss";
 import { Provider } from "react-redux";
 import store from "@redux/store";
-import { appWithTranslation } from "@i18n";
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <Provider store={store}>
       <Component {...pageProps} />
@@ -14,4 +13,4 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   );
 }
 
-export default MyApp;
+export default App;

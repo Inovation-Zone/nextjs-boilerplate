@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "start": "open http://localhost:3000 && next start",
+    "start-test": "REACT_APP_NODE_ENV=test && open http://localhost:3000 && next dev",
+    "start-prod": "REACT_APP_NODE_ENV=production && open http://localhost:3000 && next dev",
+    "build": "REACT_APP_NODE_ENV=production && next build",
     "lint": "next lint",
     "svgr": "npx @svgr/cli -d src/components/icons --ignore-existing --icon --typescript public/icons",
     "build:analyze": "ANALYZE=true npm run build",

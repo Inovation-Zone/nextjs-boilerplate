@@ -6,10 +6,10 @@ ENV NODE_ENV production
 
 COPY package*.json ./
 
-RUN npm ci 
+RUN npm install --dev && npm ci
 
 COPY . /opt/app
 
-RUN npm install --dev && npm run build
+RUN npm run build
 
 CMD [ "npm", "start" ]

@@ -9,10 +9,10 @@ export const Cards: React.FC = () => {
         {(data?.plugins ?? []).map((plugin) => (
           <div
             key={plugin.name}
-            className="col-span-1 rounded-md border border-gray-300 p-5"
+            className="col-span-1 rounded-md border border-gray-200 p-5"
           >
-            <h2 className="text-xl font-semibold mb-2">{plugin.name}</h2>
-            <p className="m-0">{plugin.description}</p>
+            <p className="text-xl font-medium mb-2">{plugin.name}</p>
+            <p className="text-base font-light m-0">{plugin.description}</p>
           </div>
         ))}
       </div>
