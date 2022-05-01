@@ -17,13 +17,15 @@
         }
     },
     "rules": {
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off"
     },
     "overrides": [
         {
             "files": ["*.js", "*.jsx"],
             "rules": {
                 "@typescript-eslint/explicit-function-return-type": "off",
+                "react/prop-types": "off"
             }
         }
     ]

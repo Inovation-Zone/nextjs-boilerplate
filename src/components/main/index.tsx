@@ -16,7 +16,6 @@ export const Main: React.FC = () => {
           <a
             data-test="docs-btn-anchor"
             href="https://pankod.github.io/superplate/"
-            target="_blank"
           >
             Docs
           </a>
