@@ -1,4 +1,4 @@
-import { increase, decrease } from "./actions";
+import { increase, decrease } from "../actions";
 
 describe("Redux Actions", () => {
   describe("Counter Actions", () => {

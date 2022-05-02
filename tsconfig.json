@@ -43,6 +43,12 @@
       "@components/icons": [
         "src/components/icons"
       ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@constants": [
+        "src/constants"
+      ],
       "@redux/*": [
         "src/redux/*"
       ],

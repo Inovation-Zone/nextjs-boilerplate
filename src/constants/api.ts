@@ -1,0 +1,16 @@
+const METHOD = {
+    GET: 'GET',
+    POST: 'POST',
+    PUT: 'PUT',
+    DELETE: 'DELETE'
+}
+
+const API_SERVICE_TYPE = {
+    API_URL_FIRST_SERVER: 'API_URL_FIRST_SERVER',
+    API_URL_SECOND_SERVER: 'API_URL_SECOND_SERVER',
+}
+
+export {
+    METHOD,
+    API_SERVICE_TYPE,
+}

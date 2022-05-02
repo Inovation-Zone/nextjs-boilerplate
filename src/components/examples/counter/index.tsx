@@ -1,29 +1,26 @@
 import React from "react";
-import { useSelector } from "react-redux";
 
-import { increase, decrease } from "@redux/actions";
-import { RootState } from "@redux/reducers";
-import { useAppDispatch } from "@redux/store";
+import { increaseAction, decreaseAction } from "@redux/counter/actions";
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from "@redux/rootReducer";
 
 export default function Counter() {
-  const dispatch = useAppDispatch();
-  const count = useSelector((state: RootState) => state.counter.count);
+    const dispatch = useDispatch();
+    const count = useSelector((state: RootState) => state.counter.count);
 
-  return (
-    <div>
-      <div>
-        <h2>Counter</h2>
-        <button type="button" onClick={() => dispatch(increase())}>
-          +
-        </button>
-        <span>{count}</span>
-        <button type="button" onClick={() => dispatch(decrease())}>
-          -
-        </button>
-      </div>
-      <a href="https://react-redux.js.org/">
-        Go To Documentation
-      </a>
-    </div>
-  );
+    return (
+        <div>
+            <div>
+                <h2>Counter</h2>
+                <button type="button" onClick={() => dispatch(increaseAction())}>
+                    +
+                </button>
+                <span>{count}</span>
+                <button type="button" onClick={() => dispatch(decreaseAction())}>
+                    -
+                </button>
+            </div>
+            <a href="https://react-redux.js.org/">Go To Documentation</a>
+        </div>
+    );
 }
